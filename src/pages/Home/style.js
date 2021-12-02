@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: relative;
+  text-align: center;
 
-  button{
+  button {
     margin: 2% auto;
-    width: 100%;
     font-size: 1.2em;
   }
 `;

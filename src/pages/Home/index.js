@@ -39,7 +39,7 @@ export default function Home() {
 
   function switchesTimerMode() {
     status === "Hora de Trabalhar"
-      ? (setStatus("Break"), setMinutes(timeBreak), setSeconds(0))
+      ? (setStatus("Descanse"), setMinutes(timeBreak), setSeconds(0))
       : (setStatus("Hora de Trabalhar"), setMinutes(timeWork), setSeconds(0));
   }
 
@@ -118,7 +118,7 @@ export default function Home() {
             <input
               type="text"
               value={`${displayMinutes}:${displaySeconds}`}
-              readOnly="true"
+              readOnly={true}
             />
           </Timer>
         </Content>
@@ -135,7 +135,9 @@ export default function Home() {
           <audio></audio>
         </Config>
 
-        <button className="reset-timer" onClick={ResetInterval}>Resetar relógio</button>
+        <button className="reset-timer" onClick={ResetInterval}>
+          Resetar relógio
+        </button>
       </Container>
 
       {showModalInfo && <ModalInfo close={() => handleShowModalInfo()} />}

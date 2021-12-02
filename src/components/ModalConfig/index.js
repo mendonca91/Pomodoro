@@ -19,6 +19,7 @@ export default function ModalConfig(props) {
         <div className="modal-text">
           <Interval>
             <div className="work-interval">
+              <p>Trabalho</p>
               <button onClick={props.workIncrement}>
                 <FaArrowAltCircleUp />
               </button>
@@ -31,6 +32,7 @@ export default function ModalConfig(props) {
 
           <Interval>
             <div className="work-interval">
+              <p>Descanso</p>
               <button onClick={props.breakIncrement}>
                 <FaArrowAltCircleUp />
               </button>
@@ -43,8 +45,9 @@ export default function ModalConfig(props) {
         </div>
         <button onClick={props.reset}>Resetar configuração</button>
 
-        
-        <button className="btn-ok-config" onClick={props.close}>Ok</button>
+        <button className="btn-ok-config" onClick={props.close}>
+          Ok
+        </button>
       </Content>
     </Container>
   );
