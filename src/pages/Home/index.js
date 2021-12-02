@@ -132,6 +132,7 @@ export default function Home() {
           <div className="config" onClick={handleShowModalConfig}>
             <FaCog />
           </div>
+          <audio></audio>
         </Config>
 
         <button className="reset-timer" onClick={ResetInterval}>Resetar relógio</button>
